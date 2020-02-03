@@ -2,26 +2,27 @@
 
 {% block content %}
 <div class="container">
-
+<div class="row">
   <!-- Looping through news   -->
   {% for images in display %}
 
-
-<div class="card" style="width: 18rem;">
+<div class="col-md-3">
+<div class=" card" style="width: 18rem;">
   <img src="{{images.image.url}}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{images.image_name}}</h5>
-    
-    
-  </div>
+    <div class="card-body">
+        <h5 class="card-title">{{images.image_name}}</h5>
+    </div>
 </div>
+</div>
+
+
 
   {% empty %}
   
   {% endfor %}
 
 </div>
-
+</div>
 
 {{block.super}}
 {% endblock %}
