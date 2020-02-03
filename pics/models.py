@@ -34,4 +34,6 @@ class Image(models.Model):
         image_result = cls.objects.get(id=incoming_id)
         return image_result
     
+    def save_image(self):
+        self.save()
     
