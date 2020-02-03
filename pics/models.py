@@ -47,4 +47,7 @@ class Image(models.Model):
     def update_image(cls,current_value,new_value):
         fetched_object = Image.objects.filter(image_name=current_value).update(image_name=new_value)
         return fetched_object
-    
+    @classmethod
+    def filter_by_location(cls,location):
+        filtered_result = cls.objects.filter(location__location_name__icontains=location)
+        return filtered_result
