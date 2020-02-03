@@ -43,4 +43,8 @@ class Image(models.Model):
         all_objects = Image.objects.all()
         for item in all_objects:
             return item;
+    @classmethod
+    def update_image(cls,current_value,new_value):
+        fetched_object = Image.objects.filter(image_name=current_value).update(image_name=new_value)
+        return fetched_object
     
