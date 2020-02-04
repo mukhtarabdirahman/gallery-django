@@ -23,6 +23,7 @@ class Image(models.Model):
     location = models.ForeignKey(Location)
     category= models.ForeignKey(Category)
     
+    
     @classmethod
     
     def search_by_image_name(cls,search_term):
