@@ -20,3 +20,11 @@ pip install -r requirements.txt
 To start the application
 
 python manage.py runserver
+# Technologies Used
+- Python3.6
+- Django1.1
+- Boostrap
+- css 
+# contact 
+- No 0741421079
+- mukhtarabdirahmanm@gmail.com
