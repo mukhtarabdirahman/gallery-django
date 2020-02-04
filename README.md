@@ -10,3 +10,13 @@ As a user of the application you will be able to:
 - Search for different categories of photos. (ie. City, Road)
 - Click on share icon to share the image with any of your social account or alternatively Copy a link to the photo and share with your friends.
 - View photos based on the location they were taken or category.
+# Setup/Installation
+Clone this repository and navigate into that directory.
+
+Install all dependencies in requirements.txt
+
+pip install -r requirements.txt
+
+To start the application
+
+python manage.py runserver
