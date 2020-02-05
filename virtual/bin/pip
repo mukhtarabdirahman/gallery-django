@@ -1,6 +1,5 @@
-#!/bin/sh
-'''exec' "/home/ahmed/Desktop/photo 2/virtual/bin/python3.6" "$0" "$@"
-' '''
+#!/home/ahmed/Desktop/Gallery/virtual/bin/python3.6
+
 # -*- coding: utf-8 -*-
 import re
 import sys
